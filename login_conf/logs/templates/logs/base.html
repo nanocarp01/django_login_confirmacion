@@ -1,0 +1,12 @@
+{% extends 'logs/minimal.html' %}
+
+{% block minimal_head %}
+    {% block base_head %}
+    {% endblock %}
+{% endblock %}
+
+{% block minimal_body %}
+    <p>Base template</p>
+    {% block base_body %}
+    {% endblock %}
+{% endblock %}

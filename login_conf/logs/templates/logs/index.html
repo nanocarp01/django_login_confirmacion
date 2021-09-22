@@ -1,0 +1,13 @@
+{% extends 'logs/base.html' %}
+
+{% block base_body %}
+        {% if routines %}
+            <ul>
+            {% for routine in routines %}
+                <li><a>{{ routine.date }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No routines available.</p>
+        {% endif %}
+{% endblock %}
